@@ -11,7 +11,8 @@ const sunMass = 150;
 // define global variables
 let sun;
 let planets=[];
-
+let minPlanets = 4;
+let maxPlanets = 40;
 
 // define class for general celestial bodies
 class AstronomicalBody {
@@ -96,7 +97,7 @@ function setup() {
 
   // generate integer for max number of planets to be displayed
   // "| 0" - bitwise or operator can be used to truncate floating point figures - works for positives as well as negatives
-  maxPlanets = random(4,8) | 0; // random(max) - from 0 to max (but not including) 
+  maxPlanets = random(minPlanets,maxPlanets) | 0; // random(max) - from 0 to max (but not including) 
   
   planets = spawnPlanets(maxPlanets);
 
