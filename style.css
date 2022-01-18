@@ -5,5 +5,5 @@ html, body { /* Remove default spacing in web page, so canvas fills up whole scr
 
 canvas { /* Display items using p5js correctly */
   display: block;
-  border: 1px solid #000;
+  /* border: 1px solid #000; */ /* No need for padding since already black program */
 }
