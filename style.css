@@ -1,3 +1,9 @@
-canvas {
-    border: 1px solid #000;
-  }
+html, body { /* Remove default spacing in web page, so canvas fills up whole screen */
+  margin: 0;
+  padding: 0;
+}
+
+canvas { /* Display items using p5js correctly */
+  display: block;
+  border: 1px solid #000;
+}
